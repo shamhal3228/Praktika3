@@ -55,5 +55,12 @@ public class Test {
         System.out.println(sq1.getColor());
         System.out.println(sq1.getSide());
         System.out.println(sq1.getLength());
+
+        MovableRectangle r = new MovableRectangle(1, 1, 2, 2, 1, 1);
+        r.moveDown();
+        r.moveLeft();
+        r.moveRight();
+        r.moveUp();
+        System.out.println(r);
     }
 }

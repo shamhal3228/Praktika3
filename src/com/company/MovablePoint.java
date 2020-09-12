@@ -2,10 +2,10 @@ package com.company;
 
 public class MovablePoint implements Movable{
 
-    int x;
-    int y;
-    int xSpeed;
-    int ySpeed;
+    protected int x;
+    protected int y;
+    protected int xSpeed;
+    protected int ySpeed;
 
     public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;
@@ -16,7 +16,7 @@ public class MovablePoint implements Movable{
 
     @Override
     public String toString() {
-        return "This is movable point";
+        return "This is movable point with coordinates: "+x+" "+y;
     }
 
     @Override
